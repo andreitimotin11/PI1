@@ -38,9 +38,20 @@
 //	var_dump('20cats' + 40);
 	var_dump(18 % 4);
 
-    echo ($a = 2);
+    echo '<br>';
+    echo ($a = 2);echo '<br>';
     $x = ($y = 12) - 8;
-    echo $x;
+    echo $x; echo '<br>';
+
+
+
+
+
+    var_dump(1 == 1.0);
+    var_dump(1 === 1.0);
+    var_dump('02' == 2);
+    var_dump('02' === 2);
+    var_dump('02' == '2');
 ?>
 
 </body>
