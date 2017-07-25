@@ -87,17 +87,32 @@ function discriminant($q, $w, $c)
 			(-$w - sqrt($d)) / (2 * $q)
 		];
 	}
-	var_dump($res);
+//	var_dump($res);
 	return $res;
 }
 
 echo discriminant(1, 3, -4)[0];
 echo discriminant(1, 3, -4)[1];
 echo '<br>';
-echo discriminant(2, 4, -7);
+echo discriminant(2, 4, -7)[0];
+echo discriminant(2, 4, -7)[1];
 echo '<br>';
-echo discriminant(1, 6, 9);
+echo discriminant(1, 6, 9)[0];
+echo discriminant(1, 6, 9)[1];
+function getGender($a){
+    if($a[strlen($a)-1] == 'a'){
+	    return 'f';
+    }
+    return 'm';
+}
+assert(getGender('Alina') == 'f' );
+assert(getGender('Andrei') == 'm');
+assert(getGender('Viorica') == 'f');
+
+
 ?>
+
+
 
 
 </body>
